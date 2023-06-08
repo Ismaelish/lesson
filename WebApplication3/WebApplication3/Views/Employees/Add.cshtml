@@ -1,0 +1,29 @@
+﻿@model WebApplication3.Models.AddEmployeeViewModel  //define the model where columns are defined
+
+@{
+    //this form will go to add method in EmployeesController.cs
+    <h1>ADD NEW EMPLOYEE</h1>
+    <form method="post" action="Add"> 
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input type="text" class="form-control" asp-for="Name">
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Email</label>
+            <input type="email" class="form-control" asp-for="Email">
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Salary</label>
+            <input type="number" class="form-control" asp-for="Salary">
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" asp-for="DoB">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+}
